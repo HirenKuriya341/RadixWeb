@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+::selection {
+    color: black;
+    background-color: #fff;
+}
+
+nav {
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #31bbae;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.menu ul li a:hover {
+    background-color: #31bbae;
+    color: #000;
+}
+
+.img {
+    background: url('Images/1.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.center .sub-title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.center .btns {
+    margin-top: 20px;
+}
+
+.center .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+.center .btns button:first-child {
+    color: #fff;
+    background: none;
+}
+
+.center .btns button:first-child:hover {
+    color: white;
+    background: black;
+    font-weight: 700;
+}
+
+.center .btns button:last-child {
+    color: #fff;
+    background: #000;
+}
+
+.center .btns button:last-child:hover {
+    color: #fff;
+    background: none;
+    font-weight: 700;
+}
+
+.heading {
+    font-size: 30px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto ;
+    background-color: none;
+    padding-left: 500px;
+    padding-top: 50px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.411);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.671);
+}
+
+.container {
+    padding: 20px 100px;
+    /* text-align: center; */
+    margin: 30px;
+}
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.footer {
+    background-color: #31bbae;
+}
+.footer .grid-container {
+    grid-template-columns: auto auto auto auto;
+    padding: 50px;
+}
+.table, td, tr {
+    border: 1px solid black;
+    margin:20px;
+    padding: 10px;
+}
+td:hover {
+    background-color: white;
+    border: #31bbae;
+}
+.container ul {
+    font-size: 20px;
+}
+.container ul li:hover {
+    color: #31bbae;
+}
+.container ul ul, p {
+    margin-left: 30px;
+    list-style-type: lower-roman;
+    font-size: 15px;
+}
